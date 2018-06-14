@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2018_06_14_203518) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "subs", force: :cascade do |t|
     t.integer "moderator_id", null: false
     t.string "name", null: false
